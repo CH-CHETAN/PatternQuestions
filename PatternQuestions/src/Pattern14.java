@@ -1,22 +1,22 @@
 /*
+ 
   
- 
-  Ques 13:
+Ques 14:
 n = 5
-*
-* *
-* * *
-* * * *
+        *
+      * *
+    * * *
+  * * * *
 * * * * *
-* * * *
-* * *
-* *
-*
- 
+  * * * *
+    * * *
+      * *
+        *
+  
   
  */
 import java.util.Scanner;
-public class Pattern13 {
+public class Pattern14 {
 	public static void main(String h[]) {
 		System.out.println("Enter the value of n");
 		Scanner scan = new Scanner(System.in);
@@ -27,8 +27,8 @@ public class Pattern13 {
 	
 	static void method1(int n) {
 		for(int i = 0; i < n; i++) {
-			for(int j = 0; j< n; j++) {
-				if(i >= j) {
+			for( int j = 0; j < n; j++) {
+				if(i + j >= n-1) {
 					System.out.print("* ");
 				} else {
 					System.out.print("  ");
@@ -36,10 +36,10 @@ public class Pattern13 {
 			}
 			System.out.println();
 		}
-		
+	
 		for(int i = 0; i < n; i++) {
-			for(int j = 0; j < n; j++) {
-				if(i+j < n-1) {
+			for( int j = 0; j < n; j++) {
+				if(i < j) {
 					System.out.print("* ");
 				} else {
 					System.out.print("  ");
